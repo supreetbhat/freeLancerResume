@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelanser Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 34);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(5, 5, 62);
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(108, 108, 134);
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 140px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 2.4rem;
+        }
+
+        .leftSection .btnn {
+            padding: 12px;
+            background: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+
+        }
+
+        .leftSection .buttons {
+            padding: 50px 0;
+        }
+
+        .rightSection img {
+            width: 80%;
+            background-size: cover;
+            border-radius: 14px;
+        }
+
+        .purple {
+            color: rgb(152, 65, 235);
+        }
+
+        #element {
+            color: rgb(152, 65, 235);
+        }
+
+
+
+        main hr {
+            border: 0;
+            background: rgb(186, 134, 236);
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .text-grey {
+            color: gray;
+        }
+
+
+        footer {
+            background-color: #0e0e1a;
+
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 123px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">My Resume</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="firstSection">
+        <div class="leftSection">
+            Hi, My name is <span class="purple">Supreet</span>
+            <div>and I am a passionate</div>
+
+            <span id="element"></span>
+            <div class="buttons">
+                <button class="btnn"><a href="Resume 4.0.pdf" download class="resume">Doumload Resume</a></button>
+                <button class="btnn"><a href="https://www.linkedin.com/in/supreet-b-8b223b233/" class="resume"
+                        target="_blank">Visit Linkdin</a></button>
+            </div>
+        </div>
+        <div class="rightSection">
+            <img src="pg.png">
+        </div>
+    </section>
+    <hr>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="pg.JPG" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am Supreet pursing bachelor's of Engineering in Information Science and
+                        Engineering. Intrested in Data Analytics and Web Development.
+                        Quick learner and have a great sense of time management. Always ready
+                        to learn new skills and to upgrade with new technologies. Good at analyzing
+                        the problems and finding solution to it.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages</span><br>Java, Python, JavaScript, HTML/CSS</li>
+                            <li><span>Frameworks</span><br>Node.js, React.js, Bootstrap</li>
+                            <li><span>Tools</span><br>Git, GitHub</li>
+                            <li><span>Others</span><br>Data Structures, Algorithms, DBMS, OOPs</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Acharya Institute of Technology</span><br>Bachelor of Engineering in Information
+                                Science and Engineering(IT)<br>CGPA : 9.08</li>
+                            <li><span>Jnana Sweekar Pu College (Deeksha Integrated)</span><br>CLASS XII : PERCENTAGE :
+                                87</li>
+                            <li><span>Pragathi Vidya Nikethana</span><br>CLASS X : PERCENTAGE : 90</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Oasis Infobyte</span><br>Intern/JUL 2023 - AUG 2023/WEB DEVELOPMENT</li>
+                            <li><span>Codsoft</span><br>Intern/AUG 2023 - SEP 2023/PYTHON DEVELOPMENT</li>
+                            <li><span>CodeClause</span><br>Intern/AUG 2023 - SEP 2023/JAVA DEVELOPMENT</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!---------portfolio--------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work-11.jpg">
+                    <div class="layer">
+                        <h3 >Online Vehicle Rental</h3>
+                        <p>To Automate the rental System so that anyone can rent their
+                            vehicles to verified trusted persons.
+                        </p>
+                        <a href="https://github.com/praveennnnnn/Online-Vechicle-Rental-System"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-22.jpg">
+                    <div class="layer">
+                        <h3 >Amazon Clone</h3>
+                        <p>The Amazon clone web application is a replica of the renowned e-commerce platform,
+                            Amazon. Developed as a learning and practice project, it aims to emulate some amazon's key
+                            functionalities.
+                        </p>
+                        <a href="https://github.com/praveennnnnn/OIBSIP/tree/main/Task_1"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-33.jpg">
+                    <div class="layer">
+                        <h3 >Alarm Application Management</h3>
+                        <p>An Alarm Management System developed using Java and XML is a software application that
+                            enables users to schedule and manage alarms for various purposes.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <hr>
+    <!---------Contact----------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i> supreetBhat01022002@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 733803XXXX</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/praveen-l-09945b24b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/S197-ALT" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <a href="Resume 4.0.pdf" download class="btn btn2">Download Cv</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="" id="email" placeholder="Your email" required>
+                        <textarea name="Message" rows="10" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <!--<div class="footer">
+            <div class="footer-first">
+                <h3>Praveen's Developer Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Services</li>
+                </ul>
+            </div>
+
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Services</li>
+                </ul>
+            </div>
+
+            <div class="footer-fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Services</li>
+                </ul>
+            </div>
+        </div>-->
+        <div class="footer-rights">
+            Copyright &#169 www.praveenl.com | All rights reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Data Analyst.'],
+            typeSpeed: 50,
+        });
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+</body>
+
+</html>
